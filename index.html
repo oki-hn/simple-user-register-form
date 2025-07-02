@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Oki Hendrawan">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple User Registration Form</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend class="main-legend">Simple User Registration Form</legend>
+            <label for="name">
+                Name: <input type="text" name="user_name" id="name" minlength="3" placeholder="John Doe" required>
+            </label>
+            <label for="email">
+                Email: <input type="email" name="user_email" id="email" placeholder="example@gmail.com" required>
+            </label>
+            <label for="password">
+                Password: <input type="password" name="user_password" id="password" minlength="6" required>
+            </label>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">
+                    <input type="radio" name="user_gender" id="male" value="male" checked> Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="user_gender" id="female" value="Female"> Female
+                </label>
+                <label for="prefer-not-to-say">
+                    <input type="radio" name="user_gender" id="prefer-not-to-say" value="prefer-not-to-say"> Prefer not to say
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select your interest</legend>
+                <label for="interest">Choose interest:</label>
+                <select name="user_interest" id="">
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-apps">Mobile Apps</option>
+                    <option value="mobile-apps">UI/UX Design</option>
+                    <option value="mobile-apps">Artificial Intelligence</option>
+                    <option value="mobile-apps">Game Development</option>
+                    <option value="mobile-apps">Data Science</option>
+                    <option value="mobile-apps">Cybersecurity</option>
+                    <option value="mobile-apps">Blogging</option>
+                    <option value="mobile-apps">Digital Marketing</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Any comments and question?</legend>
+                <textarea name="comment-question" id="comment-question" placeholder="Write somethink here.." cols="30" rows="8"></textarea>
+            </fieldset>
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

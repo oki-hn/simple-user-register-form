@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --fs-h1: clamp(2.5rem, 5vw + 1rem, 4rem);
+    --fs-h2: clamp(2rem, 4vw + 0.8rem, 3.2rem);
+    --fs-h3: clamp(1.75rem, 3vw + 0.6rem, 2.5rem);
+    --fs-h4: clamp(1.5rem, 2.5vw + 0.4rem, 2rem);
+    --fs-p: clamp(1rem, 1.5vw + 0.2rem, 1.25rem);
+    --line-height: 1.6;
+}
+h1 {
+    font-size: var(--fs-h1);
+}
+h2 {
+    font-size: var(--fs-h2);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+h4 {
+    font-size: var(--fs-h4);
+}
+p {
+    font-size: var(--fs-p);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #ddd;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    max-width: 480px;
+}
+form > fieldset {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+legend.main-legend {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 0.4em 0.6em;
+    border-radius: 0.2em;
+}
+
+form fieldset {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form input[id="name"],
+form input[id="email"],
+form input[id="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.2em 0.4em;
+}
+
+form label[for="male"],
+form label[for="female"],
+form label[for="prefer-not-to-say"] {
+    display: block;
+}
+
+form button {
+    display: inline-block;
+    padding: 0.4em 0.6em;
+    border: none;
+    border-radius: 0.8em;
+    background-color: lightskyblue;
+    color: white;
+    margin: 0.8em 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+form button:hover,
+form button:focus {
+    background-color: rgb(110, 179, 223);
+}
+form button:active {
+    background-color: rgb(87, 153, 194);
+}
